@@ -15,7 +15,7 @@ def create_person_list(people: list[dict]) -> list:
             if each["wife"] in Person.people:
                 person_instance.wife = Person.people[each["wife"]]
             else:
-                print(f"Warning: Wife {each["wife"]} for {each["name"]} "
+                print(f"Warning: Wife {each['wife']} for {each['name']} "
                       f"not found.")
         if "husband" in each and each["husband"] is not None:
             if each["husband"] in Person.people:
